@@ -1,0 +1,347 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.screen {
+    height: 100vh;
+    background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    position: relative;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.mobile-image {
+    width: 260px;
+    position: relative;
+}
+
+#illustration-woman-mobile {
+    width: inherit;
+    position: absolute;
+    top: -115px;
+}
+
+#bg-pattern-mobile {
+    width: inherit;
+    position: absolute;
+    top: 0px;
+}
+
+#bg-pattern-desktop {
+    display: none;
+}
+
+#illustration-box-desktop {
+    display: none;
+}
+
+#illustration-woman-desktop {
+    display: none;
+}
+
+.card-body {
+    width: 350px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card-head {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 110px 0px 20px;
+}
+
+.accordion {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 10px 10px 10px;
+    cursor: pointer;
+}
+
+.accordion-btn {
+    color: hsl(237, 12%, 33%);
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 0px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.accordion:hover,
+.accordion:hover .accordion-btn,
+.accordion-btn:hover {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+    background-color: hsl(240, 5%, 81%);
+}
+
+.active-btn {
+    color: hsl(238, 29%, 16%);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.panel {
+    display: none;
+
+}
+
+.active-panel {
+    display: inline-block;
+    color: hsl(240, 6%, 50%);
+    width: 310px;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Kumbh Sans', sans-serif;
+    padding: 0px 10px 0px 10px;
+    box-sizing: border-box;
+    line-height: 18px;
+}
+
+hr {
+    border: solid 1px hsl(240, 5%, 91%)
+}
+
+/* Desktop CSS Only */
+@media(min-width: 1100px) {
+    .container {
+        width: 1000px;
+        min-height: 550px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        overflow: hidden;
+        /* position: relative; */
+    }
+
+    .mobile-image {
+        width: 400px;
+    }
+
+    #illustration-woman-mobile {
+        display: none;
+    }
+
+    #bg-pattern-mobile {
+        display: none;
+    }
+
+    #bg-pattern-desktop {
+        display: inline;
+        width: 1100px;
+        position: absolute;
+        top: -330px;
+        left: -670px;
+        object-fit: contain;
+    }
+
+    #illustration-box-desktop {
+        display: inline;
+        width: 200px;
+        position: absolute;
+        top: 220px;
+        left: -97px;
+    }
+
+    #illustration-woman-desktop {
+        display: inline;
+        width: 500px;
+        position: absolute;
+        top: 80px;
+        left: -75px;
+    }
+
+
+    .card-body {
+        width: 340px;
+        /* background-color: red; */
+        padding: 50px 105px 50px 0px;
+        box-sizing: content-box;
+    }
+
+    .card-head {
+        text-align: left;
+        font-size: 36px;
+        font-weight: 700;
+        margin: 45px 0px 25px;
+    }
+
+    .accordion {
+        width: 350px;
+    }
+
+
+}
+
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 340px;
+    border-radius: 20px;
+}
+.card-body {
+    width: 340px;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.card-head {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 110px 0px 0px;
+} */
