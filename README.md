@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/pazza0118/accordion.git](https://your-solution-url.com)
-- Live Site URL: [https://alive-codfish.cyclic.app](https://your-live-site-url.com)
+- Live Site URL: [https://eclectic-pithivier-2e67d1.netlify.app/](https://your-live-site-url.com)
 
 ## My process
 
